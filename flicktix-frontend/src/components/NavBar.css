@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Ensure zero margin for AppBar */
+.MuiAppBar-root {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Ensure zero margin for Toolbar */
+.MuiToolbar-root {
+  padding: 8px 24px !important; /* Padding inside the toolbar */
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-btn {
+  position: relative;
+  text-transform: none;
+  transition: color 0.3s ease;
+  padding: 8px 16px; /* Add some padding to buttons */
+}
+
+.navbar-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.4s ease-out, left 0.4s ease-out;
+}
+
+.navbar-btn:hover {
+  color: #ffeb3b;
+  transform: scale(1.05);
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.navbar-btn:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Fixing the Search bar icon and input alignment */
+.MuiInputBase-root {
+  padding-left: 40px !important; /* Ensure proper padding for input */
+}
+
+.Search {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  padding: 5px 10px;
+  border: 1px solid #ffffff33;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.SearchIconWrapper {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%); /* Center the icon vertically */
+  pointer-events: none;
+}
+
+.MuiTypography-root {
+  margin: 0 !important;
+}

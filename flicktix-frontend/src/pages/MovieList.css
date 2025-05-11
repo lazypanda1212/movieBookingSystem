@@ -1,0 +1,21 @@
+    .scroll-container {
+        display: flex;
+        overflow-x: auto;
+        gap: 16px;
+        padding: 10px;
+    }
+    
+    .movie-card {
+        min-width: 200px;
+        background: #f4f4f4;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .movie-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+    
